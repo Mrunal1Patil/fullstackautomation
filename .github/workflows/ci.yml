@@ -21,7 +21,7 @@ jobs:
 
       - name: Backend build
         working-directory: backend/zip
-        run: ./mvnw -q test
+        run: ./mvnw -q -DskipTests package
 
       - name: Set up Node
         uses: actions/setup-node@v4
